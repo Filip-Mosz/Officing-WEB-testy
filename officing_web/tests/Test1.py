@@ -9,9 +9,9 @@ class Test1(TestCase): #have to have Test in name (convention)
         assert 1 + 2 == 4
 
     def testUrl1(self): #fail
-        match = resolve("/api/hello/")
-        assert match.url_name == "hello"
+        match = resolve("/api/hello")
+        assert match.url_name != "hello"
 
-    def testUrl2(self): #fail
+    def testUrl2(self): #OK
         response = self.client.get("/api/hello/")
         assert response.status_code == 200
