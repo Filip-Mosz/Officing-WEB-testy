@@ -1,0 +1,43 @@
+SUGESTIA drzewa plików
+
+myproject/
+├── manage.py
+├── requirements.txt
+│
+├── config/                  # konfiguracja całego projektu
+│   ├── __init__.py
+│   ├── settings.py
+│   ├── urls.py
+│   ├── asgi.py
+│   └── wsgi.py
+│
+├── users/                   # domena/aplikacja
+│   ├── migrations/
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py
+│   ├── serializers.py
+│   ├── views.py
+│   ├── urls.py
+│   ├── permissions.py
+│   └── tests/
+│       ├── __init__.py
+│       └── test_api.py
+│
+├── products/
+│   ├── migrations/
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py
+│   ├── serializers.py
+│   ├── views.py
+│   ├── urls.py
+│   └── tests/
+│
+└── common/                  # rzeczy współdzielone
+    ├── __init__.py
+    ├── permissions.py
+    ├── pagination.py
+    └── exceptions.py
